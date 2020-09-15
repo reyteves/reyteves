@@ -1,0 +1,38 @@
+.bg-1 {
+  color: #0000FF;
+  background-color:#7EC8E3;
+}
+
+.bg-2 {
+  background-color: #0000FF;
+  color: #000C66;
+}
+.bg-3 {
+  background-color: #000C66;
+  color: #0000FF;
+}
+
+.bg-4 {
+  background-color: #050A30;
+  color: #7EC8E3;
+
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+img {
+  width: auto;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.8;
+  color: #2b7470;
+  background-color: #7dabe7;
+}
+
+p {font-size: 16px;}
+
+.margin {margin-bottom: 45px;}
+
