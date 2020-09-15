@@ -16,7 +16,7 @@
   background-color: #050A30;
   color: #7EC8E3;
 
-.container-fluid {
+.container {
   padding-top: 70px;
   padding-bottom: 70px;
 }
@@ -32,7 +32,4 @@ body {
   background-color: #7dabe7;
 }
 
-p {font-size: 16px;}
-
-.margin {margin-bottom: 45px;}
 
