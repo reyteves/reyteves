@@ -1,0 +1,138 @@
+.container:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  border-radius: 90px;
+}
+
+.jumbotron {
+  border-radius: 90px;
+}
+
+body {
+  background-color: pink;
+}
+
+#portfolio-page img:hover {
+  transform: scale(1.2);
+}
+
+.form-control:hover {
+  transform: scale(1.05);
+}
+
+#name {
+  width: 800px;
+}
+
+#name:hover {
+  transform: scalex(1.1);
+}
+
+#email {
+  width: 800px;
+}
+
+#email:hover {
+  transform: scalex(1.1);
+}
+
+#sent-message {
+  width: 800px;
+}
+
+.btn {
+  background-color: rgb(29, 29, 202);
+  opacity: 0.9;
+  filter: brightness(110%);
+}
+
+.btn:hover {
+  transform: scale(1.5);
+  filter: brightness(150%);
+}
+
+body {
+  background-image: url(assets/images/background-picture.jpg);
+}
+
+.container {
+  /* background-image: url(assets/images/background-picture.jpg); */
+  width: 1000px;
+  height: 500px;
+}
+
+#contact-page .container {
+  height: 600px;
+}
+
+#landing-page .container {
+  background-image: url(assets/images/landing-page.jpg);
+}
+
+#landing-page .container:hover {
+  background-image: url(assets/images/hover-landing-page-background.jpg);
+}
+
+#landing-page .jumbotron {
+  opacity: 0.9;
+  height: 450px;
+}
+
+#menu {
+  background-color: rgb(26, 26, 163);
+  opacity: 0.9;
+}
+
+#menu li {
+  filter: brightness(150%);
+}
+
+#menu li:hover {
+  filter: brightness(200%);
+  transform: scale(1.1);
+  background-color: blue;
+  font-weight: 1000;
+  color: white;
+  opacity: 1;
+}
+
+#portfolio-page .container {
+  opacity: 0.6;
+}
+
+#portfolio-page .container:hover {
+  opacity: 1;
+  background-image: url(assets/images/portfolio-page-background.jpg);
+}
+
+#portfolio-page img {
+  height: 200px;
+  width: 200px;
+}
+
+#contact-page .container {
+  opacity: 0.6;
+}
+
+#contact-page .container:hover {
+  opacity: 1;
+  background-image: url(assets/images/contact-page-background.jpg);
+}
+
+#contact-page .container:hover {
+  opacity: 1;
+}
+
+.container h3 {
+  color: white;
+  font-size: 3rem;
+  filter: brightness(1000%);
+}
+
+#contact-page label {
+  color: white;
+  font-size: 1rem;
+  filter: brightness(1000%);
+}
