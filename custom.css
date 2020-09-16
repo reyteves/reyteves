@@ -136,3 +136,11 @@ body {
   font-size: 1rem;
   filter: brightness(1000%);
 }
+
+@media only screen and (max-width: 768px) {
+  /* Adjust Portfolio Container for mobile devices: */
+  #portfolio-page .container {
+    min-height: 160vh;
+    overflow: auto;
+  }
+}
