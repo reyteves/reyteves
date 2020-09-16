@@ -23,7 +23,7 @@ body {
 }
 
 #name {
-  width: 800px;
+  width: 300px;
 }
 
 #name:hover {
@@ -31,7 +31,7 @@ body {
 }
 
 #email {
-  width: 800px;
+  width: 300px;
 }
 
 #email:hover {
@@ -39,7 +39,7 @@ body {
 }
 
 #sent-message {
-  width: 800px;
+  width: 300px;
 }
 
 .btn {
