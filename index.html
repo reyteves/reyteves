@@ -25,85 +25,245 @@
     />
   </head>
   <body>
-
-<div id="menu">
-    <ul class="nav nav-pills flex-column flex-sm-row nav-fill nav-justified display-5">
-        <li class="nav-item">
-          <a class="nav-link" href="#landing-page">Landing Page</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#portfolio-page">Portfolio Page</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact-page">Contact Page</a>
-        </li>
-
-      </ul>
-</div>
-
-    <div id="landing-page">
-      <div class="container bg-primary my-5">
-        <div class="jumbotron bg-primary">
-          <img
-            src="assets/images/my-picture.png"
-            class="mx-auto d-block img-fluid bg-primary"
-          />
-         <h3 class="text-center display-4 text-primary">Welcome to my Website</h3>
-          <p class="text-center"><br> Hello! My Name is Rey. I am studying to be a Web Designer. <br> I created this Portfolio Website to apply my knowledge in HTML, CSS, GIT and Bootstrap.</p>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Portfolio Website</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon btn btn-info icon-info"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#landing">Landing Page</a>
+              <span class="sr-only">(current)</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Page</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </nav>
 
-    <div id="portfolio-page">
-      <div class="container bg-primary my-5 p-5">
-        <h3 class="text-center pt-3 display-4 text-primary">My Portfolio Page</h3>
+  
+
+    <!-- Header -->
+    <header
+      
+      class="py-5 mt-5 bg-image-full"
+      style="background-image: url('./assets/images/background-picture.jpg')"
+    >
+   
+    </header>
+
+    <!-- Content section -->
+    <section class="py-5">
+      <div class="container" id="landing">
+
+        <h1 class="text-center mb-5">Candidate Profile</h1>
+        <img
+        class="img-fluid d-block my-3 ml-5"
+        src="assets/images/my-picture.png"
+        alt=""
+      />
+        <p class="lead">Name: Rey Jesus M. Teves</p>
+
         <div class="row">
-          <div class="col-sm-4" id="project-1">
-            <img
-            src="assets/images/project-1.jpg"
-            class="mx-auto d-block img-fluid my-5"
-          />
-          <h3 class="text-center display-4 text-primary">Project 1</h3>
-            </div>
-            <div class="col-sm-4" id="project-2">
-                <img
-                src="assets/images/project-2.JPG"
+          <div class="col">
+            <p class="lead">Front End Skills:</p>
 
-                class="mx-auto d-block img-fluid my-5"
-              />
-              <h3 class="text-center display-4 text-primary">Project 2</h3>
+            <ul>
+              <li>Git</li>
+              <li>Gitlab</li>
+              <li>Github</li>
+              <li>Cpanel</li>
+              <li>CSS</li>
+              <li>CSS Box</li>
+              <li>Bootstrap</li>
+              <li>Front End Development</li>
+              <li>Responsive Web Design</li>
+            </ul>
+          </div>
 
-                </div>
-                <div class="col-sm-4" id="project-3">
-                    <img
-                    src="assets/images/project-3.JPG"
-                    class="mx-auto d-block img-fluid my-5"
-                  />
-                  <h3 class="text-center display-4 text-primary">Project 3</h3>
-
-                    </div>
+          <div class="col">
+            <p class="lead">Back End Skills:</p>
+            <ul>
+              <li>PHP</li>
+              <li>PHP Admin</li>
+              <li>MySQL</li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div id="contact-page">
-        <div class="container bg-primary my-5 pb-5">
-         
-          <h3 class="text-center pt-3 display-4">Contact Page</h3>
-      
-    
-          <div class="form-group m-5">
-            <label>Name</label>
-            <input type="text" class="form-control mr-10" id="name" placeholder="Name"> 
-            <label class="mt-3">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Email"> 
-            <label class="mt-3">Message</label>
-            <textarea class="form-control" rows="5" id="sent-message" placeholder="Message"></textarea>
-            <button type="button" class="btn btn-primary mt-3">Send</button>
+    <!-- Image element -->
+    <div
+      class="py-5 bg-image-full"
+      style="
+        background-image: url('./assets/images/portfolio-page-background.jpg');
+      "
+    ></div>
+
+
+  <!--Portfolio Content section -->
+    <section class="py-5">
+      <div class="container" id="portfolio">
+        <h1>Portfolio Page</h1>
+        <p class="lead">Here are my sample websites.</p>
+
+        <!-- Portfolio Rows -->
+        <div class="row text-center">
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              
+                <img
+                  class="card-img-top"
+                  src="./assets/images/project-1.jpg"
+                  alt=""
+              />
+              <div class="card-body">
+                <h4 class="card-title">
+                  Project One
+                </h4>
+                <p class="card-text">This is the Zuitt Webpage</p>
+              </div>
             </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              
+                <img
+                  class="card-img-top"
+                  src="./assets/images/project-2.JPG"
+                  alt=""
+              />
+              <div class="card-body">
+                <h4 class="card-title">
+                  Project Two
+                </h4>
+                <p class="card-text">My Project in Web Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100">
+             
+                <img
+                  class="card-img-top"
+                  src="./assets/images/project-3.JPG"
+                  alt=""
+              />
+              <div class="card-body">
+                <h4 class="card-title">
+                  Project Three
+                </h4>
+                <p class="card-text">My Project in Web Programming</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Portfolio Row -->
+      </div>
+      <!-- End Content Container -->
+    </section>
+    <!-- End Content Section -->
+  </div>
+
+
+<div id="portfolio">
+
+    <!-- Image element -->
+    <div
+      class="py-5 bg-image-full"
+      style="
+        background-image: url('./assets/images/contact-page-background.jpg');
+      "
+    ></div>
+
+    <!-- Contact Content section -->
+    <section class="py-5" id="contact">
+      <div class="container">
+        <h1>Contact Page</h1>
+
+        <div class="container contact-form">
+          <form method="post">
+            <p class="lead mt-3">Send a Message</p>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="txtName"
+                    class="form-control"
+                    placeholder="Your Name *"
+                    value=""
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="txtEmail"
+                    class="form-control"
+                    placeholder="Your Email *"
+                    value=""
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="txtPhone"
+                    class="form-control"
+                    placeholder="Your Phone Number *"
+                    value=""
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="submit"
+                    name="btnSubmit"
+                    class="btn btn-primary"
+                    value="Send"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea
+                    name="txtMsg"
+                    class="form-control"
+                    placeholder="Your Message *"
+                    style="width: 100%; height: 150px"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-light border border-info">
+      <div class="container">
+        <p class="m-0 text-center text-info">
+          Copyright &copy; Rey Jesus Teves 2020
+        </p>
+      </div>
+      <!-- /.container -->
+    </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./assets/js/jquery-3.5.1.js"></script>
