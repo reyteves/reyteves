@@ -19,14 +19,13 @@
     <!--Custom CSS -->
     <link rel="stylesheet" href="custom.css" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+  
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top" id="menu">
       <div class="container">
         <a class="navbar-brand" href="#">Portfolio Website</a>
         <button
@@ -69,7 +68,7 @@
     </header>
 
     <!-- Content section -->
-    <section class="py-5">
+    <section class="py-5" id="skill-list">
       <div class="container" id="landing">
 
         <h1 class="text-center mb-5">Candidate Profile</h1>
@@ -78,11 +77,11 @@
         src="assets/images/my-picture.png"
         alt=""
       />
-        <p class="lead">Name: Rey Jesus M. Teves</p>
+        <p>Name: Rey Jesus M. Teves</p>
 
         <div class="row">
           <div class="col">
-            <p class="lead">Front End Skills:</p>
+            <p>Front End Skills:</p>
 
             <ul>
               <li>Git</li>
@@ -98,7 +97,7 @@
           </div>
 
           <div class="col">
-            <p class="lead">Back End Skills:</p>
+            <p>Back End Skills:</p>
             <ul>
               <li>PHP</li>
               <li>PHP Admin</li>
@@ -119,8 +118,8 @@
 
 
   <!--Portfolio Content section -->
-    <section class="py-5">
-      <div class="container" id="portfolio">
+    <section class="py-5" id="portfolio">
+      <div class="container">
         <h1>Portfolio Page</h1>
         <p class="lead">Here are my sample websites.</p>
 
