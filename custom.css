@@ -91,39 +91,58 @@ nav li {
 }
 
 /*menu color*/
-#menu{
+#menu {
     color: #0394fc;
     filter: brightness(105%);
     opacity: .99;
 
 }
 
-#menu .navbar-brand{
-  color: #0394fc;
-  filter: brightness(1000%);
-  font-weight: bold;
+#menu .navbar-brand {
+    color: #0394fc;
+    filter: brightness(1000%);
+    font-weight: bold;
 }
 
-#menu .nav-link{
-  color: #0394fc;
-  filter: brightness(1000%);
-  font-weight: bold;
+#menu .nav-link {
+    color: #0394fc;
+    filter: brightness(1000%);
+    font-weight: bold;
 }
 
-#menu .nav-link:hover{
-  color: #0394fc;
-  filter: brightness(1000%);
-  font-weight: lighter;
+#menu .nav-link:hover {
+    color: #0394fc;
+    filter: brightness(1000%);
+    font-weight: lighter;
 }
 
 /*Contact Font*/
 
-#contact p{
-  font-size: 25px;
+#contact p {
+    font-size: 25px;
 }
 
-#contact ::placeholder{
-  font-size: 20px;
+#contact ::placeholder {
+    font-size: 20px;
     color: #0394fc;
 
+}
+
+#contact input {
+    font-size: 20px;
+    color: #0394fc;
+}
+
+#contact textarea {
+    font-size: 20px;
+    color: #0394fc;
+}
+
+
+#contact .btn {
+    font-size: 20px;
+    color: white;
+
+    background-color: #0394fc;
+    
 }
