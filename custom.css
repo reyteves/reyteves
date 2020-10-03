@@ -113,7 +113,9 @@ nav li {
 #menu .nav-link:hover {
     color: #0394fc;
     filter: brightness(1000%);
-    font-weight: lighter;
+    transform: scale(1.2);
+    transition-timing-function: ease-in-out;
+
 }
 
 /*Contact Font*/
@@ -145,4 +147,11 @@ nav li {
 
     background-color: #0394fc;
     
+}
+
+#portfolio .card:hover{
+  transform: scale(1.1);
+
+  transition-timing-function: ease-in-out;
+
 }
