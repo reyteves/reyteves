@@ -1,54 +1,60 @@
 body {
-  padding-top: 56px;
+    padding-top: 56px;
 }
 
 .bg-image-full {
-  background: no-repeat center center scroll;
-  -webkit-background-size: contain, cover;
-  -moz-background-size: contain, cover;
-  background-size: contain, cover;
-  -o-background-size: contain, cover;
-  height: 300px;
-  width: 100%;
-  opacity: 0.7;
+    background: no-repeat center center scroll;
+    -webkit-background-size: contain, cover;
+    -moz-background-size: contain, cover;
+    background-size: contain, cover;
+    -o-background-size: contain, cover;
+    height: 300px;
+    width: 100%;
+    opacity: 0.7;
 }
 
 #landing img {
-  height: 100px;
-  width: 100px;
+    height: 100px;
+    width: 100px;
 }
 
 #portfolio img {
-  height: auto;
-  width: auto;
-  opacity: 0.7;
+    height: auto;
+    width: auto;
+    opacity: 0.7;
 }
 
-/* font properties */
+/* font properties: color and brighness; */
 
 h1 {
-  color: #0394fc;
-  filter: brightness(110%);
+    color: #0394fc;
+    filter: brightness(110%);
 }
 
 p {
-  color: #0394fc;
-  filter: brightness(110%);
+    color: #0394fc;
+    filter: brightness(110%);
 }
 
 li {
-  color: #0394fc;
-  filter: brightness(110%);
+    color: #0394fc;
+    filter: brightness(110%);
 }
 
-/* Skill List */
+/* Skill List Text Size */
 
 #skill-list {
-  font-size: 25px;
+    font-size: 25px;
 }
 
 /* font style */
 
 * {
-  font-family: "Archivo Narrow", sans-serif;
+font-family: 'MedievalSharp', cursive;
+}
+
+/*menu fonts*/
+
+nav li{
+ font-size: 23px;
 }
