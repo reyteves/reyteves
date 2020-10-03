@@ -50,7 +50,7 @@ li {
 
 /*skill list hover effect*/
 
-#skill-list li:hover{
+#skill-list li:hover {
     font-size: 30px;
     filter: brightness(150%);
 }
@@ -58,11 +58,72 @@ li {
 /* font style */
 
 * {
-font-family: 'MedievalSharp', cursive;
+    font-family: 'MedievalSharp', cursive;
 }
 
 /*menu fonts*/
 
-nav li{
- font-size: 23px;
+nav li {
+    font-size: 23px;
+}
+
+/*Portfolio Section Text - test nested css*/
+
+#portfolio {
+    font-size: 20px;
+
+}
+
+#portfolio h1 {
+    font-weight: bold;
+
+}
+
+#portfolio h2 {
+    color: #0394fc;
+
+}
+
+#portfolio .card-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #0394fc;
+}
+
+/*menu color*/
+#menu{
+    color: #0394fc;
+    filter: brightness(105%);
+    opacity: .99;
+
+}
+
+#menu .navbar-brand{
+  color: #0394fc;
+  filter: brightness(1000%);
+  font-weight: bold;
+}
+
+#menu .nav-link{
+  color: #0394fc;
+  filter: brightness(1000%);
+  font-weight: bold;
+}
+
+#menu .nav-link:hover{
+  color: #0394fc;
+  filter: brightness(1000%);
+  font-weight: lighter;
+}
+
+/*Contact Font*/
+
+#contact p{
+  font-size: 25px;
+}
+
+#contact ::placeholder{
+  font-size: 20px;
+    color: #0394fc;
+
 }
