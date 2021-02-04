@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My Portfolio Page</title>
+    <title>Rey Jesus Teves</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -16,20 +16,32 @@
       href="./assets/css/bootstrap.css"
     />
 
+    <!--Bootstrap Lumen -->
+    <link rel="stylesheet" href="bootstrap-lumen.css" />
+
     <!--Custom CSS -->
     <link rel="stylesheet" href="custom.css" />
 
-    <!-- Font  -->
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+ <!-- Font  -->
 <link href="https://fonts.googleapis.com/css2?family=Engagement&family=Lobster&family=Lobster+Two:ital,wght@1,700&family=MedievalSharp&display=swap" rel="stylesheet">
 
+<!-- Animate on scroll -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- hover.css -->
+<link rel="stylesheet" href="hover.css">
 
   
   </head>
   <body>
+
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top " id="menu">
+    <nav class="navbar navbar-expand-sm fixed-top " id="menu">
       <div class="container">
-        <a class="navbar-brand" href="#">My Portfolio Page</a>
+        <a class="navbar-brand hvr-grow-shadow" href="#">Rey Jesus Teves</a>
         <button
           class="navbar-toggler border-0"
           type="button"
@@ -44,14 +56,14 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto lead">
             <li class="nav-item active">
-              <a class="nav-link" href="#landing">Home</a>
+              <a class="nav-link hvr-underline-from-left hvr-grow-shadow" href="#landing">Home</a>
               <span class="sr-only">(current)</span>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Projects</a>
+              <a class="nav-link hvr-underline-from-left hvr-grow-shadow" href="#portfolio">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link hvr-underline-from-left hvr-grow-shadow" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -60,26 +72,54 @@
 
   
 
-    <!-- Header -->
-    <header  
-      
-      style="background-image: url('./assets/images/background-picture.jpg')"
-    >
-   
-    </header>
+<!-- Header -->
 
-    <!-- Content section -->
-    <section class="py-5"  id="landing" >
+
+ <header class="jumbotron text-center">
+  <img id="img-dev-portrait" src="./assets/images/rey.jpg" class="rounded-square mt-5 blinkanimation" alt="dev-portrait"/>
+
+  
+   <h1 class="mt-5 texteffect"><b>Rey Jesus Teves</b></h1>
+   <p class="mt-5 texteffect">
+     Website Developer and Designer
+   </p>
+   
+   <a href="mailto:reyjesusmirandateves@gmail.com?Subject=Good%20News%20Rey" class="btn btn-primary mt-5"><i class="far fa-paper-plane"></i> Contact Me <i class="far fa-envelope"></i></a>
+  
+ 
+
+ </header>
+
+
+<!-- Stacks List -->
+  <section id="talking-buttons">
+    <div class="ctn container my-3 pb-5">
+        <h1 class="my-5 text-left"> <b>Stacks (Click An Icon)</b></h1>
+        <input type="image" id="Html5Btn" src="assets/images/icons/logo-html5.png" m-3 class="hvr-grow-shadow" data-aos="fade-left" />
+        <input type="image" id="Css3Btn" src="assets/images/icons/logo-css3.png" m-3 class="hvr-grow-shadow" data-aos="fade-left" />
+        <input type="image" id="BootstrapBtn" src="assets/images/icons/logo-bootstrap.png" m-3 class="hvr-grow-shadow" data-aos="fade-left" />
+        <input type="image" id="JavascriptBtn" src="assets/images/icons/logo-javascript.png" m-3 class="hvr-grow-shadow" data-aos="fade-left" />
+        <input type="image" id="GitBtn" src="assets/images/icons/logo-git.png" m-3 class="hvr-grow-shadow" data-aos="fade-left" />
+        <input type="image" id="GithubBtn" src="assets/images/icons/logo-github.png" m-3 class="hvr-grow-shadow" data-aos="fade-left" />
+        <input type="image" id="GitlabBtn" src="assets/images/icons/logo-gitlab-ci-cd.png" m-3 class="hvr-grow-shadow" data-aos="fade-left" />
+        <input type="image" id="PhpBtn" src="assets/images/icons/logo-php.png" m-3 class="hvr-grow-shadow" data-aos="fade-left" />
+        <input type="image" id="MySQLBtn" src="assets/images/icons/logo-mysql.png" m-3 class="hvr-grow-shadow" data-aos="fade-left" />
+        <input type="image" id="CpanelBtn" src="assets/images/icons/logo-cpanel.png" m-3 class="hvr-grow-shadow" data-aos="fade-left" />
+        <input type="image" id="HerokuBtn" src="assets/images/icons/logo-heroku.png" m-3 class="hvr-grow-shadow" data-aos="fade-left" />
+        </div>
+</section>
+
+<!-- Skills List -->
+ <section class="py-0"  id="landing" >
       <div class="container" id="skill-list">
 
-        <h1 class="text-center mb-5 mt-5"><b>About the Author</b></h1 >
-        <img
+        <h1 class="text-left mb-5"><b>Web Design and Development Skills</b></h1>
+        <img  
         class="img-fluid d-block my-3 ml-5"
         src="assets/images/my-picture.png"
         alt=""
       />
-        <p class="mt-5"> <b>Name:</b> Rey Jesus M. Teves </p>
-
+        
         <div class="row">
           <div class="col">
             <p><b>My Front End Programming Skills:</b></p>
@@ -100,6 +140,9 @@
           <div class="col">
             <p><b>My Back End Programming Skills:</b></p>
             <ul>
+              <li>Node.js</li>
+              <li>MongoDB</li>
+              <li>Express</li>
               <li>PHP</li>
               <li>PHP Admin</li>
               <li>MySQL</li>
@@ -109,17 +152,9 @@
       </div>
     </section>
 
-    <!-- Porfolio Image element -->
-    <div
-      class="py-5 bg-image-full"
-      style="
-        background-image: url('./assets/images/portfolio-page-background.jpg');
-      "
-    ></div>
 
-
-<!--Portfolio Content section -->
-<section class="py-5">
+<!--Projects List-->
+<section class="pb-5" id="portfolio-section">
     <div class="container" id="portfolio">
         <h1 class="mt-5">Projects</h1>
         <h2 class="mt-3 mb-5">Here are my sample websites.</h2>
@@ -128,15 +163,15 @@
         <div class="row text-center">
           
 
-<div class="col-lg-4 col-sm-6 mb-4">
-    <a href="https://zuitt.co/" target="_blank">
+<div class="col-lg-4 col-sm-6 mb-4 hvr-bounce-in">
+    <a href="https://rey_jesus_teves.gitlab.io/capstone-1/" target="_blank">
         <div class="card h-100">
             <img class="card-img-top" src="./assets/images/project-1.jpg" alt="" />
             <div class="card-body">
                 <h4 class="card-title">
-                    Project One
+                    My Portfolio Website (Material Design)
                 </h4>
-                <p class="card-text">This is the Zuitt Webpage</p>
+                <p class="card-text">The website was developed using HTML, CSS, Bootstrap and Javascript.</p>
             </div>
         </div>
     </a>
@@ -144,29 +179,29 @@
 
           
 
-<div class="col-lg-4 col-sm-6 mb-4">
-    <a href="http://reywebdesigns.ciit.edu.ph/" target="_blank">
+<div class="col-lg-4 col-sm-6 mb-4 hvr-bounce-in">
+    <a href="https://rey_jesus_teves.gitlab.io/coursespage/index.html" target="_blank">
         <div class="card h-100">
             <img class="card-img-top" src="./assets/images/project-2.JPG" alt="" />
             <div class="card-body">
                 <h4 class="card-title">
-                    Project Two
+                    A Design For an Online Learning Website 
                 </h4>
-                <p class="card-text">My Project in Web Design</p>
+                <p class="card-text">The website was developed using MongoDB Atlas, Express, Node.js, Heroku and Gitlab Pages</p>
             </div>
         </div>
     </a>
 </div>
 
-<div class="col-lg-4 col-sm-6 mb-4">
-    <a href="http://reywebpages.ciit.edu.ph/" target="_blank">
+<div class="col-lg-4 col-sm-6 mb-4 hvr-bounce-in">
+    <a href="https://rey_jesus_teves.gitlab.io/coursecard/index.html" target="_blank">
         <div class="card h-100">
             <img class="card-img-top" src="./assets/images/project-3.JPG" alt="" />
             <div class="card-body">
                 <h4 class="card-title">
-                    Project Three
+                    Table to Card Viewer 
                 </h4>
-                <p class="card-text">My Project in Web Programming</p>
+                <p class="card-text">A UI (User Interface) that can switch data from table to card view, to make the contents more appealing.</p>
             </div>
         </div>
     </a>
@@ -183,16 +218,9 @@
 
 <div id="portfolio">
 
-    <!-- Image element -->
-    <div
-      class="py-5 bg-image-full"
-      style="
-        background-image: url('./assets/images/contact-page-background.jpg');
-      "
-    ></div>
 
-    <!-- Contact Content section -->
-    <section class="py-5" id="contact">
+<!-- Contact -->
+      <section id="contact">
       <div class="container">
         <h1>Contact</h1>
 
@@ -204,18 +232,20 @@
                 <div class="form-group">
                   <input
                     type="text"
-                    name="txtName"
+                    name="txtSubject"
+                    id ="txtSubject"
                     class="form-control"
-                    placeholder="Your Name *"
+                    placeholder="Subject"
                     value=""
                   />
                 </div>
                 <div class="form-group">
                   <input
                     type="text"
-                    name="txtEmail"
+                    name="txtName"
+                    id ="txtName"
                     class="form-control"
-                    placeholder="Your Email *"
+                    placeholder="Your Name"
                     value=""
                   />
                 </div>
@@ -223,17 +253,10 @@
                   <input
                     type="text"
                     name="txtPhone"
+                    id="txtPhone"
                     class="form-control"
-                    placeholder="Your Phone Number *"
+                    placeholder="Your Phone Number"
                     value=""
-                  />
-                </div>
-                <div class="form-group mt-5">
-                  <input
-                    type="submit"
-                    name="btnSubmit"
-                    class="btn btn-primary"
-                    value="Send"
                   />
                 </div>
               </div>
@@ -241,11 +264,15 @@
                 <div class="form-group">
                   <textarea
                     name="txtMsg"
+                    id="txtMsg"
                     class="form-control"
-                    placeholder="Your Message *"
+                    placeholder="Your Message"
                     style="width: 100%; height: 150px"
                   ></textarea>
                 </div>
+<div class="form-group mt-1 mb-5 float-right">
+    <input type="submit" name="btnSubmit" class="btn btn-primary" value="Send" onclick="sendMail();"/>
+</div>
               </div>
             </div>
           </form>
@@ -253,19 +280,31 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-3 bg-light border border-primary">
-      <div class="container">
-        <p class="m-0 text-center primary-info">
-          Copyright &copy; Rey Jesus Teves 2020
-        </p>
-      </div>
-      <!-- /.container -->
-    </footer>
+
+<!-- Footer -->
+<footer class="footer fixed-bottom">
+  <p class="p-3 mb-0 text-center">
+   <b>Rey Jesus Teves - My Porfolio Website&copy 2020 </b>
+  </p>
+</footer>
+
+
+	<!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./assets/js/jquery-3.5.1.js"></script>
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!-- Artyom -->
+	<script src="artyom.window.js"></script>
+	<script src="custom-script.js"></script>
+
+	<!-- AOS initialization -->
+	<script>
+	 AOS.init();
+	</script>
+
   </body>
 </html>

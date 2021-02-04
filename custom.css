@@ -1,157 +1,275 @@
+
+/*CSS Variables*/
+:root {
+  --light-color: #E4A980;
+  --dark-color: #7E4241;
+  --menu-footer-light: #0e59ed;
+  --menu-footer-dark: #61dafb; 
+
+}
+
+/********************************************************************/
+
+.texteffect {
+  font-size: 80px !important;
+  text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC, 2px 2px 2px rgba(230,0,115,0);
+  color: #fa7166;
+  background: #E4A980;
+}
+
+/********************************************************************/
+/* Dev Image Pulse Animation */
+
+.blinkanimation {
+    background: transparent;
+    border-color: transparent;
+    z-index: 2;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 1.5);
+    animation: blinkanimation 2s infinite;
+}
+
+@keyframes blinkanimation {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    
+    70% {
+        transform: scale(1.02);
+        box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0);
+    }
+    
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+@media (max-width: 320px) {
+    #img-dev-portrait {
+        max-width: 40%
+    }
+}
+
+
+
+/********************************************************************/
+
+/*CSS Elements*/
+
 body {
-    padding-top: 56px;
-}
+  /*padding-top: 56px;*/  
 
-.bg-image-full {
-    background: no-repeat center center scroll;
-    -webkit-background-size: contain, cover;
-    -moz-background-size: contain, cover;
-    background-size: contain, cover;
-    -o-background-size: contain, cover;
-    height: 300px;
-    width: 100%;
-    opacity: 0.7;
-}
+  display: grid;
+  align: center;
 
-#landing img {
-    height: 100px;
-    width: 100px;
-}
-
-#portfolio img {
-    height: auto;
-    width: auto;
-    opacity: 0.7;
-}
-
-/* font properties: color and brighness; */
-
-h1 {
-    color: #0394fc;
-    filter: brightness(110%);
-}
-
-p {
-    color: #0394fc;
-    filter: brightness(110%);
-}
-
-li {
-    color: #0394fc;
-    filter: brightness(110%);
-}
-
-/* Skill List Text Size */
-
-#skill-list {
-    font-size: 25px;
-}
-
-
-/*skill list hover effect*/
-
-#skill-list li:hover {
-    font-size: 30px;
-    filter: brightness(150%);
 }
 
 /* font style */
 
 * {
-    font-family: 'MedievalSharp', cursive;
+  font-family: "MedievalSharp", cursive;
 }
 
 /*menu fonts*/
 
 nav li {
-    font-size: 23px;
+  font-size: 23px;
 }
 
-/*Portfolio Section Text - test nested css*/
+/*Jumbotron*/
+
+.jumbotron h1 {
+  font-size: 40px;
+}
+
+.jumbotron p {
+  font-size: 40px;
+}
+
+.jumbotron .btn {
+  font-size: 25px;
+}
+
+.jumbotron .btn:hover {
+  font-size: 30px;
+  filter: brightness(150%);
+}
+
+#landing img {
+  height: 200px;
+  width: 300px;
+  justify: center;
+}
+
+#portfolio img {
+  height: auto;
+  width: auto;
+  
+  /*opacity: 0.7;*/
+}
+
+/* font properties: color and brightness; */
+
+h1 {
+  color: var(--dark-color);
+}
+
+p {
+  color: var(--dark-color);
+}
+
+li {
+  color: var(--dark-color);
+}
+
+/* Skill List Text Size */
+
+#skill-list {
+  font-size: 25px;
+}
+
+/*Skill list hover effect*/
+
+#skill-list li:hover {
+font-size: 30px;
+  
+}
+
+/*Talking buttons*/
+
+#talking-buttons {
+  font-size: 25px;
+  display: grid;
+  
+  text-align: center;
+}
+
+#talking-buttons i {
+  font-size: 31px;
+}
+
+#talking-buttons b {
+  font-size: 30px;
+}
+
+#talking-buttons input:hover {
+  transform: scale(1.2);
+  filter: brightness(200%);
+}
+
+
+/*Portfolio Text*/
 
 #portfolio {
-    font-size: 20px;
-
+  font-size: 20px;
 }
 
 #portfolio h1 {
-    font-weight: bold;
-
+  font-weight: bold;
 }
 
 #portfolio h2 {
-    color: #0394fc;
-
+  color: var(--dark-color);
 }
 
 #portfolio .card-title {
-    font-size: 25px;
-    font-weight: bold;
-    color: #0394fc;
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--dark-color);
 }
 
-/*menu color*/
-#menu {
-    color: #0394fc;
-    filter: brightness(105%);
-    opacity: .99;
+/*Contact Text*/
 
+
+#contact{
+  padding-bottom: 7em;
+  padding-bottom: 7em;
 }
-
-#menu .navbar-brand {
-    color: #0394fc;
-    filter: brightness(1000%);
-    font-weight: bold;
-}
-
-#menu .nav-link {
-    color: #0394fc;
-    filter: brightness(1000%);
-    font-weight: bold;
-}
-
-#menu .nav-link:hover {
-    color: #0394fc;
-    filter: brightness(1000%);
-    transform: scale(1.2);
-    transition-timing-function: ease-in-out;
-
-}
-
-/*Contact Font*/
 
 #contact p {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 #contact ::placeholder {
-    font-size: 20px;
-    color: #0394fc;
-
+  font-size: 20px;
+  color: var(--dark-color);
 }
 
 #contact input {
-    font-size: 20px;
-    color: #0394fc;
+  font-size: 20px;
+  color: var(--dark-color);
 }
 
 #contact textarea {
-    font-size: 20px;
-    color: #0394fc;
+  font-size: 20px;
+  color: var(--dark-color);
 }
-
 
 #contact .btn {
-    font-size: 20px;
-    color: white;
+  font-size: 20px;
+  color: white;
 
-    background-color: #0394fc;
-    
+  background-color: var(--dark-color);
 }
 
-#portfolio .card:hover{
-  transform: scale(1.1);
 
-  transition-timing-function: ease-in-out;
+
+/*Background Color Test*/
+
+body {
+  background-color: var(--light-color);
+}
+
+/*All background color test*/
+
+body,
+#landing,
+#portfolio,
+#contact {
+  background-color: var(--light-color);
+}
+
+.jumbotron{
+  border-color: var(--light-color);
+  background-color: var(--light-color);
+  /*border-bottom-color: var(--dark-color);*/
+  padding-top: 9em;
+  padding-bottom: 8em;
 
 }
+
+
+/*menu grid*/
+nav{
+  display: gird;
+}
+
+
+/*menu color*/
+nav,
+.navbar,
+.navbar-brand,
+a {
+  background-color: var(--menu-footer-light);l
+  border-color: var(--menu-footer-dark);
+  color: var(--menu-footer-dark);
+  font-weight: bold;
+  text-shadow: 2px 2px 6px var(--light-color);
+  filter: brightness(102%);
+  opacity: .99;
+}
+
+/*footer color*/
+
+.footer {
+  border-top: 3px var(---menu-footer-dark) solid; 
+  background-color: var(--menu-footer-light); 
+  filter: brightness(102%);
+  opacity: .99;
+}
+
+.footer b {
+  color: var(--menu-footer-dark); 
+  text-shadow: 2px 2px 6px var(--light-color);
+
+}
+
